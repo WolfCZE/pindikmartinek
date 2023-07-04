@@ -1,0 +1,388 @@
+set es_enableCustomData 1 
+set mysql_connection_string "mysql://root@localhost/unrp?charset=utf8mb4"
+set mysql_slow_query_warning 100
+endpoint_add_tcp "0.0.0.0:30130"
+endpoint_add_udp "0.0.0.0:30130"
+sv_maxclients 7
+# Only change the IP if you're using a server with multiple network interfaces, otherwise change the port only.
+
+# Permissions For Essential Commands #
+
+set sv_enforceGameBuild h4
+set sv_enforceGameBuild mptuner
+set sv_enforceGameBuild 2372
+
+# These resources will start by default.
+start mapmanager
+start esx_status
+start chat
+start esx_vehicleshop-master
+start spawnmanager
+start sessionmanager
+start hardcap
+start bob74_ipl
+start trew_hud_ui2
+## From ESX Pack ##
+start rc_hud
+ensure Discord
+start async
+start cron
+start es_extended
+start instance
+start rc_hud
+start unrp_reports
+start skinchanger
+start esx_status
+start Kl_HudV2
+start b2k-minimap
+start ceba_hud
+start teasty_satna
+start ac_hud
+start esx_addonaccount
+start esx_addoninventory
+start esx_society
+start esx_basicneeds
+start esx_billing
+start esx_cruisecontrol
+start esx_datastore
+start esx_dmvschool
+start esx_identity
+start esx_joblisting
+start esx_jobs
+start esx_license
+start esx_menu_default
+start esx_menu_dialog
+start esx_menu_list
+start esx_optionalneeds
+start esx_rpchat
+start esx_service
+start esx_sit
+start esx_skin
+start esx_multicharacter
+start esx_status
+start esx_moneywash
+start salty_crafting
+start vb-banking
+start esx_jewelrobbery
+start NativeUILua
+start Vehicle-UI
+start esx_spectate
+start linden_outlawalert
+start pausemenu-title
+start principalbankrobbery
+start qalle_coords
+start sqz_carmenu
+start wk_wars2x
+start esx_eden_clotheshop
+start esx_eden_clotheshopA
+start esx_communityservice
+start esx_drugs
+start esx_hospital
+start esx_changingrooms
+start esx_jailer
+start trump-stretcher
+start trump-stretcher-script
+start loffe_robbery
+start DamageWalkMode
+start dpclothing
+#start dpscenes
+start ESX_Documents
+start ft_libs
+start ChairBedSystem
+start MenuAPI
+start nek_gym
+start r3_pawnshop
+start RealisticVehicleFailure
+start srp_dlctattoos
+start Tetovani
+start xsound
+start esx_barbershop
+start esx_joblisting
+start r3_pawnshop
+start r3_notifications
+start esx_extraitems
+start mbl-bodycam
+start disabledispatch
+start ReducedNPCs
+start sawu_hookers
+start rflx_pdblips
+start esx_mdt
+start rage_ck
+start unrp_masks
+## At ##
+start esx_adminplus
+start FiveM-BanSql
+start [devmartin]
+## Dev ##
+start loffe_robbery
+start esx_jb_dj
+start nui_doorlock
+start jsfour-idcard
+start esx_vehiclelock
+start trump-stretcher
+start trump-stretcher-script
+start cards
+start warmenu
+start nh-context
+start 
+
+## drugs ##
+start drc_drugsystem
+
+## skill ##
+start esx_kr_skillsystem
+start gym
+
+## Zbrane ##
+start Recoil
+start g17
+start 870
+start m4
+start x26
+start sound
+start nonpcdrop
+
+## interier
+start ammu
+start ccfarmhouse
+start courthouse1
+start courthouse2
+start dons_cindys
+start dons_cindys2
+start gabz_bennys
+start gabz_mrpd
+start hayesauto
+start int_sheriff_v2_dev
+start ipl_sheriff_v2
+start mafia2
+start museum
+start opendoor_madrazo
+start pablito_cafe
+start pablito_restauracja
+start petshop_map
+start pillbox_hospital
+start smokey_grove
+start unicorn
+start playboyv2
+start slth_warehouse
+start warehouse
+start xnBahamaMamas
+start comicosandy
+start verpi_jobcentre
+start prison-map-addon
+
+
+#joby
+ensure wk_wars2x
+start [bary]
+start [nelegal]
+start [urad]
+start esx_ambulancejob
+start esx_bennysjob
+start esx_policejob
+start esx_bennysjob
+start esx_duty
+start esx_mechanicjob
+start esx_sheriffjob
+#start esx_statejob
+start esx_vigneronjob
+start 
+start sqz_switchjob
+start
+## mumble ##
+start ls-radio
+start mumble-voip
+start
+## Tag ##
+start relisoft_tag
+start relisoft_users
+
+## Hud ##
+start trew_hud_ui
+start mmap
+start scoreboard
+start loadingsalr
+start personalmenu
+start fh4map
+start core_hud
+start chud
+
+## Telefon ##
+start screenshot-basic
+start esx_addons_gcphone
+start gcphone
+
+## Animace ##
+start dpemotes
+
+#garaze
+start esx_advancedgarage
+start esx_advancedvehicleshop
+start esx_licenseshop
+start LegacyFuel
+start esx_property
+
+## auta ##
+start [Cars]
+start [EMS]
+start [moto]
+start [MAFIA]
+start [DRIFT]
+start [MECHANIC]
+start [lssd]
+start [police]
+start liveryui
+start lux_vehcontrol
+
+## Obleceni ##
+start gucci_mask
+start Funkclothes
+
+
+## clothing-stream-pedstream ##
+start alesclothing
+start dat-peda
+start eup-stream
+start K9_ped
+
+## zbrane ##
+start CarabineRifle
+start CombatPistol
+start
+start
+start
+
+## Multicharacter ##
+start 
+
+## End of ESX Pack ##
+start mysql-async
+set mysql_log_level 12
+start rconlog
+ensure linden_inventory
+start mythic_notify
+start mythic_progbar
+start ghmattimysql
+start handemotes
+start carry
+start takehostage
+
+#ped
+start K9_ped
+start dat-peda
+
+
+
+
+
+
+
+add_ace group.admin command allow # allow all commands
+add_ace group.admin command.quit deny # but don't allow quit
+add_principal identifier.fivem:1 group.admin # add the admin to the group
+add_ace group.admin "hyperadmin.ban" allow
+add_ace group.admin "hyperadmin.kick" allow
+add_ace group.admin "hyperadmin.monitor" allow
+add_ace group.admin "hyperadmin.tp" allow
+add_ace group.admin "hyperadmin.bring" allow
+add_ace group.admin "hyperadmin.resourcestart" allow
+add_ace group.admin "hyperadmin.resourcestop" allow
+add_ace group.admin "hyperadmin.resourcerestart" allow
+add_ace group.admin "hyperadmin.gametype" allow
+add_ace group.admin "hyperadmin.mapname" allow
+
+add_ace identifier.steam:110000131f76776"adminmenu.admin" allow       #tntys 
+add_ace identifier.steam:110000113ca4d77"adminmenu.admin" allow       #dead
+add_ace identifier.steam:11000011830c1c4"adminmenu.admin" allow       #garry
+add_ace identifier.steam:11000011c27317a"adminmenu.admin" allow       #lofik
+add_ace identifier.steam:110000139e48090"adminmenu.admin" allow       #dog
+add_ace identifier.steam:1100001424c02e9"adminmenu.admin" allow       #teasty
+add_ace identifier.steam:110000147b9b7d7"adminmenu.admin" allow       #pilda
+add_ace identifier.steam:110000147b9b7d7"adminmenu.admin" allow       #numericka klavesnica
+add_ace identifier.steam:110000133862af7"adminmenu.admin" allow       #juke
+add_ace identifier.steam:11000010b09dd0f"adminmenu.admin" allow       #aman
+add_ace identifier.steam:steamidHEX"adminmenu.admin" allow
+
+
+add_ace vbacbypass allow
+add_ace identifier.steam:110000131f76776 vbacbypass allow
+add_ace identifier.steam:110000113ca4d77 vbacbypass allow
+add_ace identifier.steam:11000011830c1c4 vbacbypass allow
+add_ace identifier.steam:11000011c27317a vbacbypass allow
+add_ace identifier.steam:110000139e48090 vbacbypass allow
+add_ace identifier.steam:1100001424c02e9 vbacbypass allow
+add_ace identifier.steam:110000147b9b7d7 vbacbypass allow
+add_ace identifier.steam:110000133862af7 vbacbypass allow
+add_ace identifier.steam:11000010b09dd0f vbacbypass allow
+add_ace identifier.steam:steamidHEX vbacbypass allow
+add_ace identifier.steam:steamidHEX vbacbypass allow
+
+
+
+
+
+
+
+# This allows players to use scripthook-based plugins such as the legacy Lambda Menu.
+# Set this to 1 to allow scripthook. Do note that this does _not_ guarantee players won't be able to use external plugins.
+sv_scriptHookAllowed 0
+
+rcon_password 5e9206a591
+rcon_password 5e9206a591
+
+# A comma-separated list of tags for your server.
+# For example:
+# - sets tags "drifting, cars, racing"
+# Or:
+# - sets tags "roleplay, military, tanks"
+sets tags "esx, roleplay, cz/sk, rp, cz, sk, unrp, un, unlimited, rp, un, unrp, theunlimitedroleplay, the, unlimited, roleplay, rpcz, rpsk, unique, rpcz, rpsk"
+
+# A valid locale identifier for your server's primary language.
+# For example "en-US", "fr-CA", "nl-NL", "de-DE", "en-GB", "pt-BR"
+# please DO replace root-AQ on the line ABOVE with a real language! :)
+
+# Set an optional server info and connecting banner image url.
+# Size doesn't matter, any banner sized image will be fine.
+sets banner_detail "https://uwrp.cz/fivem/bckrnd.png"
+sets banner_connecting "https://uwrp.cz/fivem/bckrnd.png"
+
+# Set your server's hostname
+
+
+
+# Nested configs!
+#exec server_internal.cfg
+
+# Loading a server icon (96x96 PNG file)
+sv_hostname "☁ Unlimited Roleplay ☁ | 🕐 IN DEV 🕐"
+sets Discord discord.gg/FmJgkmYrzb
+load_server_icon zap96x96.png
+
+# convars which can be used in scripts
+set temp_convar "hey world!"
+
+# Remove the `#` from the below line if you do not want your server to be listed in the server browser.
+# Do not edit it if you *do* want your server listed.
+sv_master1 ""
+
+setr ea_LanguageName "cs"
+setr ea_MenuButton "208"
+set ea_moderationNotification "https://discord.com/api/webhooks/812266795670044674/tfuGtTiVS4Y1tGLfQefc0X3JE_xxiIhjnukhVQoPRnDpkEEjqyZPsSMhZ3L6Rzgn0VR9"
+set ea_enableCallAdminCommand "true"
+set ea_enableReportCommand "true"
+
+# Add system admins
+add_ace group.admin command allow # allow all commands
+add_ace group.admin command.quit deny # but don't allow quit
+add_principal identifier.fivem:1 group.admin # add the admin to the group
+
+# enable OneSync (required for server-side state awareness)
++set onesync legacy
+onesync_enabled 1
+# Server player slot limit (see https://fivem.net/server-hosting for limits)
+sv_licenseKey "pqz6t6jxf0ycrzt4bmnif3kd0de30uav"
+restart sessionmanager
+set steam_webApiKey "DF69BD4AB9EC1A95C9ABE5CFF8653011"
+set sv_UseDirectListing false
+sets locale "root-AQ"
+sv_endpointprivacy true
